@@ -6,7 +6,7 @@ This project analyzes Airbnb listing data to uncover trends and insights about p
 ---
 
 ## Dashboard
-![Dashboard Overview](image/Dashboard_Image.png)
+![Dashboard Overview](images/Dashboard_Image.png)
 
 The dashboard highlights:
 - Key metrics such as pricing, reviews, and availability.
