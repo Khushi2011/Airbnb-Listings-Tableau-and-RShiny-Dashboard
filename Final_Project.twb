@@ -1,0 +1,1029 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20241.24.0524.1403                               -->
+<workbook original-version='18.1' source-build='2024.1.3 (20241.24.0524.1403)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='listings_Seattle' inline='true' name='federated.034j1w30bp3iq51b7y7d01t20to6' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='listings_Seattle' name='textscan.0zizsfw1dz197l13bbldc1lvwvtz'>
+            <connection class='textscan' directory='C:/Users/Khushi/Downloads' filename='listings_Seattle.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation all='true' name='listings_Seattle.csv+' type='union'>
+          <columns character-set='UTF-8' header='yes' locale='en_IN' separator=',' />
+          <relation connection='textscan.0zizsfw1dz197l13bbldc1lvwvtz' name='listings_Seattle.csv' table='[listings_Seattle#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+              <column datatype='integer' name='id' ordinal='0' />
+              <column datatype='string' name='name' ordinal='1' />
+              <column datatype='integer' name='host_id' ordinal='2' />
+              <column datatype='string' name='host_name' ordinal='3' />
+              <column datatype='string' name='neighbourhood_group' ordinal='4' />
+              <column datatype='string' name='neighbourhood' ordinal='5' />
+              <column datatype='real' name='latitude' ordinal='6' />
+              <column datatype='real' name='longitude' ordinal='7' />
+              <column datatype='string' name='room_type' ordinal='8' />
+              <column datatype='integer' name='price' ordinal='9' />
+              <column datatype='integer' name='minimum_nights' ordinal='10' />
+              <column datatype='integer' name='number_of_reviews' ordinal='11' />
+              <column datatype='date' name='last_review' ordinal='12' />
+              <column datatype='real' name='reviews_per_month' ordinal='13' />
+              <column datatype='integer' name='calculated_host_listings_count' ordinal='14' />
+              <column datatype='integer' name='availability_365' ordinal='15' />
+              <column datatype='integer' name='number_of_reviews_ltm' ordinal='16' />
+              <column datatype='string' name='license' ordinal='17' />
+            </columns>
+          </relation>
+          <relation connection='textscan.0zizsfw1dz197l13bbldc1lvwvtz' name='listings_Boston.csv' table='[listings_Boston#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+              <column datatype='integer' name='id' ordinal='0' />
+              <column datatype='string' name='name' ordinal='1' />
+              <column datatype='integer' name='host_id' ordinal='2' />
+              <column datatype='string' name='host_name' ordinal='3' />
+              <column datatype='string' name='neighbourhood_group' ordinal='4' />
+              <column datatype='string' name='neighbourhood' ordinal='5' />
+              <column datatype='real' name='latitude' ordinal='6' />
+              <column datatype='real' name='longitude' ordinal='7' />
+              <column datatype='string' name='room_type' ordinal='8' />
+              <column datatype='integer' name='price' ordinal='9' />
+              <column datatype='integer' name='minimum_nights' ordinal='10' />
+              <column datatype='integer' name='number_of_reviews' ordinal='11' />
+              <column datatype='date' name='last_review' ordinal='12' />
+              <column datatype='real' name='reviews_per_month' ordinal='13' />
+              <column datatype='integer' name='calculated_host_listings_count' ordinal='14' />
+              <column datatype='integer' name='availability_365' ordinal='15' />
+              <column datatype='integer' name='number_of_reviews_ltm' ordinal='16' />
+              <column datatype='string' name='license' ordinal='17' />
+            </columns>
+          </relation>
+          <relation connection='textscan.0zizsfw1dz197l13bbldc1lvwvtz' name='listings_chicago.csv' table='[listings_chicago#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+              <column datatype='integer' name='id' ordinal='0' />
+              <column datatype='string' name='name' ordinal='1' />
+              <column datatype='integer' name='host_id' ordinal='2' />
+              <column datatype='string' name='host_name' ordinal='3' />
+              <column datatype='string' name='neighbourhood_group' ordinal='4' />
+              <column datatype='string' name='neighbourhood' ordinal='5' />
+              <column datatype='real' name='latitude' ordinal='6' />
+              <column datatype='real' name='longitude' ordinal='7' />
+              <column datatype='string' name='room_type' ordinal='8' />
+              <column datatype='integer' name='price' ordinal='9' />
+              <column datatype='integer' name='minimum_nights' ordinal='10' />
+              <column datatype='integer' name='number_of_reviews' ordinal='11' />
+              <column datatype='date' name='last_review' ordinal='12' />
+              <column datatype='real' name='reviews_per_month' ordinal='13' />
+              <column datatype='integer' name='calculated_host_listings_count' ordinal='14' />
+              <column datatype='integer' name='availability_365' ordinal='15' />
+              <column datatype='integer' name='number_of_reviews_ltm' ordinal='16' />
+              <column datatype='string' name='license' ordinal='17' />
+            </columns>
+          </relation>
+          <relation connection='textscan.0zizsfw1dz197l13bbldc1lvwvtz' name='listings_Dallas.csv' table='[listings_Dallas#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+              <column datatype='integer' name='id' ordinal='0' />
+              <column datatype='string' name='name' ordinal='1' />
+              <column datatype='integer' name='host_id' ordinal='2' />
+              <column datatype='string' name='host_name' ordinal='3' />
+              <column datatype='string' name='neighbourhood_group' ordinal='4' />
+              <column datatype='string' name='neighbourhood' ordinal='5' />
+              <column datatype='real' name='latitude' ordinal='6' />
+              <column datatype='real' name='longitude' ordinal='7' />
+              <column datatype='string' name='room_type' ordinal='8' />
+              <column datatype='integer' name='price' ordinal='9' />
+              <column datatype='integer' name='minimum_nights' ordinal='10' />
+              <column datatype='integer' name='number_of_reviews' ordinal='11' />
+              <column datatype='date' name='last_review' ordinal='12' />
+              <column datatype='real' name='reviews_per_month' ordinal='13' />
+              <column datatype='integer' name='calculated_host_listings_count' ordinal='14' />
+              <column datatype='integer' name='availability_365' ordinal='15' />
+              <column datatype='integer' name='number_of_reviews_ltm' ordinal='16' />
+              <column datatype='string' name='license' ordinal='17' />
+            </columns>
+          </relation>
+          <relation connection='textscan.0zizsfw1dz197l13bbldc1lvwvtz' name='listings_Denver.csv' table='[listings_Denver#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+              <column datatype='integer' name='id' ordinal='0' />
+              <column datatype='string' name='name' ordinal='1' />
+              <column datatype='integer' name='host_id' ordinal='2' />
+              <column datatype='string' name='host_name' ordinal='3' />
+              <column datatype='string' name='neighbourhood_group' ordinal='4' />
+              <column datatype='string' name='neighbourhood' ordinal='5' />
+              <column datatype='real' name='latitude' ordinal='6' />
+              <column datatype='real' name='longitude' ordinal='7' />
+              <column datatype='string' name='room_type' ordinal='8' />
+              <column datatype='integer' name='price' ordinal='9' />
+              <column datatype='integer' name='minimum_nights' ordinal='10' />
+              <column datatype='integer' name='number_of_reviews' ordinal='11' />
+              <column datatype='date' name='last_review' ordinal='12' />
+              <column datatype='real' name='reviews_per_month' ordinal='13' />
+              <column datatype='integer' name='calculated_host_listings_count' ordinal='14' />
+              <column datatype='integer' name='availability_365' ordinal='15' />
+              <column datatype='integer' name='number_of_reviews_ltm' ordinal='16' />
+              <column datatype='string' name='license' ordinal='17' />
+            </columns>
+          </relation>
+          <relation connection='textscan.0zizsfw1dz197l13bbldc1lvwvtz' name='listings_Los_Angeles.csv' table='[listings_Los_Angeles#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+              <column datatype='integer' name='id' ordinal='0' />
+              <column datatype='string' name='name' ordinal='1' />
+              <column datatype='integer' name='host_id' ordinal='2' />
+              <column datatype='string' name='host_name' ordinal='3' />
+              <column datatype='string' name='neighbourhood_group' ordinal='4' />
+              <column datatype='string' name='neighbourhood' ordinal='5' />
+              <column datatype='real' name='latitude' ordinal='6' />
+              <column datatype='real' name='longitude' ordinal='7' />
+              <column datatype='string' name='room_type' ordinal='8' />
+              <column datatype='integer' name='price' ordinal='9' />
+              <column datatype='integer' name='minimum_nights' ordinal='10' />
+              <column datatype='integer' name='number_of_reviews' ordinal='11' />
+              <column datatype='date' name='last_review' ordinal='12' />
+              <column datatype='real' name='reviews_per_month' ordinal='13' />
+              <column datatype='integer' name='calculated_host_listings_count' ordinal='14' />
+              <column datatype='integer' name='availability_365' ordinal='15' />
+              <column datatype='integer' name='number_of_reviews_ltm' ordinal='16' />
+              <column datatype='string' name='license' ordinal='17' />
+            </columns>
+          </relation>
+          <relation connection='textscan.0zizsfw1dz197l13bbldc1lvwvtz' name='listings_NewYork.csv' table='[listings_NewYork#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+              <column datatype='integer' name='id' ordinal='0' />
+              <column datatype='string' name='name' ordinal='1' />
+              <column datatype='integer' name='host_id' ordinal='2' />
+              <column datatype='string' name='host_name' ordinal='3' />
+              <column datatype='string' name='neighbourhood_group' ordinal='4' />
+              <column datatype='string' name='neighbourhood' ordinal='5' />
+              <column datatype='real' name='latitude' ordinal='6' />
+              <column datatype='real' name='longitude' ordinal='7' />
+              <column datatype='string' name='room_type' ordinal='8' />
+              <column datatype='integer' name='price' ordinal='9' />
+              <column datatype='integer' name='minimum_nights' ordinal='10' />
+              <column datatype='integer' name='number_of_reviews' ordinal='11' />
+              <column datatype='date' name='last_review' ordinal='12' />
+              <column datatype='real' name='reviews_per_month' ordinal='13' />
+              <column datatype='integer' name='calculated_host_listings_count' ordinal='14' />
+              <column datatype='integer' name='availability_365' ordinal='15' />
+              <column datatype='integer' name='number_of_reviews_ltm' ordinal='16' />
+              <column datatype='string' name='license' ordinal='17' />
+            </columns>
+          </relation>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation all='true' name='listings_Seattle.csv+' type='union'>
+          <columns character-set='UTF-8' header='yes' locale='en_IN' separator=',' />
+          <relation connection='textscan.0zizsfw1dz197l13bbldc1lvwvtz' name='listings_Seattle.csv' table='[listings_Seattle#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+              <column datatype='integer' name='id' ordinal='0' />
+              <column datatype='string' name='name' ordinal='1' />
+              <column datatype='integer' name='host_id' ordinal='2' />
+              <column datatype='string' name='host_name' ordinal='3' />
+              <column datatype='string' name='neighbourhood_group' ordinal='4' />
+              <column datatype='string' name='neighbourhood' ordinal='5' />
+              <column datatype='real' name='latitude' ordinal='6' />
+              <column datatype='real' name='longitude' ordinal='7' />
+              <column datatype='string' name='room_type' ordinal='8' />
+              <column datatype='integer' name='price' ordinal='9' />
+              <column datatype='integer' name='minimum_nights' ordinal='10' />
+              <column datatype='integer' name='number_of_reviews' ordinal='11' />
+              <column datatype='date' name='last_review' ordinal='12' />
+              <column datatype='real' name='reviews_per_month' ordinal='13' />
+              <column datatype='integer' name='calculated_host_listings_count' ordinal='14' />
+              <column datatype='integer' name='availability_365' ordinal='15' />
+              <column datatype='integer' name='number_of_reviews_ltm' ordinal='16' />
+              <column datatype='string' name='license' ordinal='17' />
+            </columns>
+          </relation>
+          <relation connection='textscan.0zizsfw1dz197l13bbldc1lvwvtz' name='listings_Boston.csv' table='[listings_Boston#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+              <column datatype='integer' name='id' ordinal='0' />
+              <column datatype='string' name='name' ordinal='1' />
+              <column datatype='integer' name='host_id' ordinal='2' />
+              <column datatype='string' name='host_name' ordinal='3' />
+              <column datatype='string' name='neighbourhood_group' ordinal='4' />
+              <column datatype='string' name='neighbourhood' ordinal='5' />
+              <column datatype='real' name='latitude' ordinal='6' />
+              <column datatype='real' name='longitude' ordinal='7' />
+              <column datatype='string' name='room_type' ordinal='8' />
+              <column datatype='integer' name='price' ordinal='9' />
+              <column datatype='integer' name='minimum_nights' ordinal='10' />
+              <column datatype='integer' name='number_of_reviews' ordinal='11' />
+              <column datatype='date' name='last_review' ordinal='12' />
+              <column datatype='real' name='reviews_per_month' ordinal='13' />
+              <column datatype='integer' name='calculated_host_listings_count' ordinal='14' />
+              <column datatype='integer' name='availability_365' ordinal='15' />
+              <column datatype='integer' name='number_of_reviews_ltm' ordinal='16' />
+              <column datatype='string' name='license' ordinal='17' />
+            </columns>
+          </relation>
+          <relation connection='textscan.0zizsfw1dz197l13bbldc1lvwvtz' name='listings_chicago.csv' table='[listings_chicago#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+              <column datatype='integer' name='id' ordinal='0' />
+              <column datatype='string' name='name' ordinal='1' />
+              <column datatype='integer' name='host_id' ordinal='2' />
+              <column datatype='string' name='host_name' ordinal='3' />
+              <column datatype='string' name='neighbourhood_group' ordinal='4' />
+              <column datatype='string' name='neighbourhood' ordinal='5' />
+              <column datatype='real' name='latitude' ordinal='6' />
+              <column datatype='real' name='longitude' ordinal='7' />
+              <column datatype='string' name='room_type' ordinal='8' />
+              <column datatype='integer' name='price' ordinal='9' />
+              <column datatype='integer' name='minimum_nights' ordinal='10' />
+              <column datatype='integer' name='number_of_reviews' ordinal='11' />
+              <column datatype='date' name='last_review' ordinal='12' />
+              <column datatype='real' name='reviews_per_month' ordinal='13' />
+              <column datatype='integer' name='calculated_host_listings_count' ordinal='14' />
+              <column datatype='integer' name='availability_365' ordinal='15' />
+              <column datatype='integer' name='number_of_reviews_ltm' ordinal='16' />
+              <column datatype='string' name='license' ordinal='17' />
+            </columns>
+          </relation>
+          <relation connection='textscan.0zizsfw1dz197l13bbldc1lvwvtz' name='listings_Dallas.csv' table='[listings_Dallas#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+              <column datatype='integer' name='id' ordinal='0' />
+              <column datatype='string' name='name' ordinal='1' />
+              <column datatype='integer' name='host_id' ordinal='2' />
+              <column datatype='string' name='host_name' ordinal='3' />
+              <column datatype='string' name='neighbourhood_group' ordinal='4' />
+              <column datatype='string' name='neighbourhood' ordinal='5' />
+              <column datatype='real' name='latitude' ordinal='6' />
+              <column datatype='real' name='longitude' ordinal='7' />
+              <column datatype='string' name='room_type' ordinal='8' />
+              <column datatype='integer' name='price' ordinal='9' />
+              <column datatype='integer' name='minimum_nights' ordinal='10' />
+              <column datatype='integer' name='number_of_reviews' ordinal='11' />
+              <column datatype='date' name='last_review' ordinal='12' />
+              <column datatype='real' name='reviews_per_month' ordinal='13' />
+              <column datatype='integer' name='calculated_host_listings_count' ordinal='14' />
+              <column datatype='integer' name='availability_365' ordinal='15' />
+              <column datatype='integer' name='number_of_reviews_ltm' ordinal='16' />
+              <column datatype='string' name='license' ordinal='17' />
+            </columns>
+          </relation>
+          <relation connection='textscan.0zizsfw1dz197l13bbldc1lvwvtz' name='listings_Denver.csv' table='[listings_Denver#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+              <column datatype='integer' name='id' ordinal='0' />
+              <column datatype='string' name='name' ordinal='1' />
+              <column datatype='integer' name='host_id' ordinal='2' />
+              <column datatype='string' name='host_name' ordinal='3' />
+              <column datatype='string' name='neighbourhood_group' ordinal='4' />
+              <column datatype='string' name='neighbourhood' ordinal='5' />
+              <column datatype='real' name='latitude' ordinal='6' />
+              <column datatype='real' name='longitude' ordinal='7' />
+              <column datatype='string' name='room_type' ordinal='8' />
+              <column datatype='integer' name='price' ordinal='9' />
+              <column datatype='integer' name='minimum_nights' ordinal='10' />
+              <column datatype='integer' name='number_of_reviews' ordinal='11' />
+              <column datatype='date' name='last_review' ordinal='12' />
+              <column datatype='real' name='reviews_per_month' ordinal='13' />
+              <column datatype='integer' name='calculated_host_listings_count' ordinal='14' />
+              <column datatype='integer' name='availability_365' ordinal='15' />
+              <column datatype='integer' name='number_of_reviews_ltm' ordinal='16' />
+              <column datatype='string' name='license' ordinal='17' />
+            </columns>
+          </relation>
+          <relation connection='textscan.0zizsfw1dz197l13bbldc1lvwvtz' name='listings_Los_Angeles.csv' table='[listings_Los_Angeles#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+              <column datatype='integer' name='id' ordinal='0' />
+              <column datatype='string' name='name' ordinal='1' />
+              <column datatype='integer' name='host_id' ordinal='2' />
+              <column datatype='string' name='host_name' ordinal='3' />
+              <column datatype='string' name='neighbourhood_group' ordinal='4' />
+              <column datatype='string' name='neighbourhood' ordinal='5' />
+              <column datatype='real' name='latitude' ordinal='6' />
+              <column datatype='real' name='longitude' ordinal='7' />
+              <column datatype='string' name='room_type' ordinal='8' />
+              <column datatype='integer' name='price' ordinal='9' />
+              <column datatype='integer' name='minimum_nights' ordinal='10' />
+              <column datatype='integer' name='number_of_reviews' ordinal='11' />
+              <column datatype='date' name='last_review' ordinal='12' />
+              <column datatype='real' name='reviews_per_month' ordinal='13' />
+              <column datatype='integer' name='calculated_host_listings_count' ordinal='14' />
+              <column datatype='integer' name='availability_365' ordinal='15' />
+              <column datatype='integer' name='number_of_reviews_ltm' ordinal='16' />
+              <column datatype='string' name='license' ordinal='17' />
+            </columns>
+          </relation>
+          <relation connection='textscan.0zizsfw1dz197l13bbldc1lvwvtz' name='listings_NewYork.csv' table='[listings_NewYork#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+              <column datatype='integer' name='id' ordinal='0' />
+              <column datatype='string' name='name' ordinal='1' />
+              <column datatype='integer' name='host_id' ordinal='2' />
+              <column datatype='string' name='host_name' ordinal='3' />
+              <column datatype='string' name='neighbourhood_group' ordinal='4' />
+              <column datatype='string' name='neighbourhood' ordinal='5' />
+              <column datatype='real' name='latitude' ordinal='6' />
+              <column datatype='real' name='longitude' ordinal='7' />
+              <column datatype='string' name='room_type' ordinal='8' />
+              <column datatype='integer' name='price' ordinal='9' />
+              <column datatype='integer' name='minimum_nights' ordinal='10' />
+              <column datatype='integer' name='number_of_reviews' ordinal='11' />
+              <column datatype='date' name='last_review' ordinal='12' />
+              <column datatype='real' name='reviews_per_month' ordinal='13' />
+              <column datatype='integer' name='calculated_host_listings_count' ordinal='14' />
+              <column datatype='integer' name='availability_365' ordinal='15' />
+              <column datatype='integer' name='number_of_reviews_ltm' ordinal='16' />
+              <column datatype='string' name='license' ordinal='17' />
+            </columns>
+          </relation>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[listings_Seattle.csv+]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[id]</local-name>
+            <parent-name>[listings_Seattle.csv+]</parent-name>
+            <remote-alias>id</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[listings_Seattle.csv_D3999E652F844C47B4D296FAD100FD97]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[name]</local-name>
+            <parent-name>[listings_Seattle.csv+]</parent-name>
+            <remote-alias>name</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[listings_Seattle.csv_D3999E652F844C47B4D296FAD100FD97]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>host_id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[host_id]</local-name>
+            <parent-name>[listings_Seattle.csv+]</parent-name>
+            <remote-alias>host_id</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[listings_Seattle.csv_D3999E652F844C47B4D296FAD100FD97]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>host_name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[host_name]</local-name>
+            <parent-name>[listings_Seattle.csv+]</parent-name>
+            <remote-alias>host_name</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[listings_Seattle.csv_D3999E652F844C47B4D296FAD100FD97]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>neighbourhood_group</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[neighbourhood_group]</local-name>
+            <parent-name>[listings_Seattle.csv+]</parent-name>
+            <remote-alias>neighbourhood_group</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[listings_Seattle.csv_D3999E652F844C47B4D296FAD100FD97]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>neighbourhood</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[neighbourhood]</local-name>
+            <parent-name>[listings_Seattle.csv+]</parent-name>
+            <remote-alias>neighbourhood</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[listings_Seattle.csv_D3999E652F844C47B4D296FAD100FD97]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>latitude</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[latitude]</local-name>
+            <parent-name>[listings_Seattle.csv+]</parent-name>
+            <remote-alias>latitude</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[listings_Seattle.csv_D3999E652F844C47B4D296FAD100FD97]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>longitude</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[longitude]</local-name>
+            <parent-name>[listings_Seattle.csv+]</parent-name>
+            <remote-alias>longitude</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[listings_Seattle.csv_D3999E652F844C47B4D296FAD100FD97]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>room_type</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[room_type]</local-name>
+            <parent-name>[listings_Seattle.csv+]</parent-name>
+            <remote-alias>room_type</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[listings_Seattle.csv_D3999E652F844C47B4D296FAD100FD97]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>price</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[price]</local-name>
+            <parent-name>[listings_Seattle.csv+]</parent-name>
+            <remote-alias>price</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[listings_Seattle.csv_D3999E652F844C47B4D296FAD100FD97]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>minimum_nights</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[minimum_nights]</local-name>
+            <parent-name>[listings_Seattle.csv+]</parent-name>
+            <remote-alias>minimum_nights</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[listings_Seattle.csv_D3999E652F844C47B4D296FAD100FD97]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>number_of_reviews</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[number_of_reviews]</local-name>
+            <parent-name>[listings_Seattle.csv+]</parent-name>
+            <remote-alias>number_of_reviews</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[listings_Seattle.csv_D3999E652F844C47B4D296FAD100FD97]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>last_review</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[last_review]</local-name>
+            <parent-name>[listings_Seattle.csv+]</parent-name>
+            <remote-alias>last_review</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[listings_Seattle.csv_D3999E652F844C47B4D296FAD100FD97]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>reviews_per_month</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[reviews_per_month]</local-name>
+            <parent-name>[listings_Seattle.csv+]</parent-name>
+            <remote-alias>reviews_per_month</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[listings_Seattle.csv_D3999E652F844C47B4D296FAD100FD97]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>calculated_host_listings_count</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[calculated_host_listings_count]</local-name>
+            <parent-name>[listings_Seattle.csv+]</parent-name>
+            <remote-alias>calculated_host_listings_count</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[listings_Seattle.csv_D3999E652F844C47B4D296FAD100FD97]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>availability_365</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[availability_365]</local-name>
+            <parent-name>[listings_Seattle.csv+]</parent-name>
+            <remote-alias>availability_365</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[listings_Seattle.csv_D3999E652F844C47B4D296FAD100FD97]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>number_of_reviews_ltm</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[number_of_reviews_ltm]</local-name>
+            <parent-name>[listings_Seattle.csv+]</parent-name>
+            <remote-alias>number_of_reviews_ltm</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[listings_Seattle.csv_D3999E652F844C47B4D296FAD100FD97]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>license</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[license]</local-name>
+            <parent-name>[listings_Seattle.csv+]</parent-name>
+            <remote-alias>license</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[listings_Seattle.csv_D3999E652F844C47B4D296FAD100FD97]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Table Name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Table Name]</local-name>
+            <parent-name>[listings_Seattle.csv+]</parent-name>
+            <remote-alias>Table Name</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[listings_Seattle.csv_D3999E652F844C47B4D296FAD100FD97]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='City' datatype='string' name='[Calculation_491173865620414465]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='IF CONTAINS([Table Name], &quot;chicago&quot;) THEN &quot;Chicago&quot;&#13;&#10;ELSEIF CONTAINS([Table Name], &quot;Seattle&quot;) THEN &quot;Seattle&quot;&#13;&#10;ELSEIF CONTAINS([Table Name], &quot;Dallas&quot;) THEN &quot;Dallas&quot;&#13;&#10;ELSEIF CONTAINS([Table Name], &quot;Los_Angeles&quot;) THEN &quot;Los Angeles&quot;&#13;&#10;ELSEIF CONTAINS([Table Name], &quot;NewYork&quot;) THEN &quot;New York&quot;&#13;&#10;ELSEIF CONTAINS([Table Name], &quot;Boston&quot;) THEN &quot;Boston&quot;&#13;&#10;ELSEIF CONTAINS([Table Name], &quot;Denver&quot;) THEN&quot;Denver&quot;&#13;&#10;END' />
+      </column>
+      <_.fcp.ObjectModelTableType.true...column caption='listings_Seattle.csv' datatype='table' name='[__tableau_internal_object_id__].[listings_Seattle.csv_D3999E652F844C47B4D296FAD100FD97]' role='measure' type='quantitative' />
+      <column aggregation='Avg' datatype='real' name='[latitude]' role='measure' semantic-role='[Geographical].[Latitude]' type='quantitative' />
+      <column aggregation='Avg' datatype='real' name='[longitude]' role='measure' semantic-role='[Geographical].[Longitude]' type='quantitative' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Canada&quot;' />
+      </semantic-values>
+      <field-sort-info field-sort-order-type='custom-order'>
+        <field-sort-custom-order field='id' />
+        <field-sort-custom-order field='Calculation_491173865620414465' />
+        <field-sort-custom-order field='name' />
+        <field-sort-custom-order field='host_id' />
+        <field-sort-custom-order field='host_name' />
+        <field-sort-custom-order field='neighbourhood_group' />
+        <field-sort-custom-order field='neighbourhood' />
+        <field-sort-custom-order field='latitude' />
+        <field-sort-custom-order field='longitude' />
+        <field-sort-custom-order field='room_type' />
+        <field-sort-custom-order field='price' />
+        <field-sort-custom-order field='minimum_nights' />
+        <field-sort-custom-order field='number_of_reviews' />
+        <field-sort-custom-order field='last_review' />
+        <field-sort-custom-order field='reviews_per_month' />
+        <field-sort-custom-order field='calculated_host_listings_count' />
+        <field-sort-custom-order field='availability_365' />
+        <field-sort-custom-order field='number_of_reviews_ltm' />
+        <field-sort-custom-order field='license' />
+        <field-sort-custom-order field='Table Name' />
+        <field-sort-custom-order field='Geometry (generated)' />
+        <field-sort-custom-order field='Latitude (generated)' />
+        <field-sort-custom-order field='Longitude (generated)' />
+        <field-sort-custom-order field=':Measure Names' />
+        <field-sort-custom-order field='Multiple Values' />
+      </field-sort-info>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='listings_Seattle.csv' id='listings_Seattle.csv_D3999E652F844C47B4D296FAD100FD97'>
+            <properties context=''>
+              <relation all='true' name='listings_Seattle.csv+' type='union'>
+                <columns character-set='UTF-8' header='yes' locale='en_IN' separator=',' />
+                <relation connection='textscan.0zizsfw1dz197l13bbldc1lvwvtz' name='listings_Seattle.csv' table='[listings_Seattle#csv]' type='table'>
+                  <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+                    <column datatype='integer' name='id' ordinal='0' />
+                    <column datatype='string' name='name' ordinal='1' />
+                    <column datatype='integer' name='host_id' ordinal='2' />
+                    <column datatype='string' name='host_name' ordinal='3' />
+                    <column datatype='string' name='neighbourhood_group' ordinal='4' />
+                    <column datatype='string' name='neighbourhood' ordinal='5' />
+                    <column datatype='real' name='latitude' ordinal='6' />
+                    <column datatype='real' name='longitude' ordinal='7' />
+                    <column datatype='string' name='room_type' ordinal='8' />
+                    <column datatype='integer' name='price' ordinal='9' />
+                    <column datatype='integer' name='minimum_nights' ordinal='10' />
+                    <column datatype='integer' name='number_of_reviews' ordinal='11' />
+                    <column datatype='date' name='last_review' ordinal='12' />
+                    <column datatype='real' name='reviews_per_month' ordinal='13' />
+                    <column datatype='integer' name='calculated_host_listings_count' ordinal='14' />
+                    <column datatype='integer' name='availability_365' ordinal='15' />
+                    <column datatype='integer' name='number_of_reviews_ltm' ordinal='16' />
+                    <column datatype='string' name='license' ordinal='17' />
+                  </columns>
+                </relation>
+                <relation connection='textscan.0zizsfw1dz197l13bbldc1lvwvtz' name='listings_Boston.csv' table='[listings_Boston#csv]' type='table'>
+                  <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+                    <column datatype='integer' name='id' ordinal='0' />
+                    <column datatype='string' name='name' ordinal='1' />
+                    <column datatype='integer' name='host_id' ordinal='2' />
+                    <column datatype='string' name='host_name' ordinal='3' />
+                    <column datatype='string' name='neighbourhood_group' ordinal='4' />
+                    <column datatype='string' name='neighbourhood' ordinal='5' />
+                    <column datatype='real' name='latitude' ordinal='6' />
+                    <column datatype='real' name='longitude' ordinal='7' />
+                    <column datatype='string' name='room_type' ordinal='8' />
+                    <column datatype='integer' name='price' ordinal='9' />
+                    <column datatype='integer' name='minimum_nights' ordinal='10' />
+                    <column datatype='integer' name='number_of_reviews' ordinal='11' />
+                    <column datatype='date' name='last_review' ordinal='12' />
+                    <column datatype='real' name='reviews_per_month' ordinal='13' />
+                    <column datatype='integer' name='calculated_host_listings_count' ordinal='14' />
+                    <column datatype='integer' name='availability_365' ordinal='15' />
+                    <column datatype='integer' name='number_of_reviews_ltm' ordinal='16' />
+                    <column datatype='string' name='license' ordinal='17' />
+                  </columns>
+                </relation>
+                <relation connection='textscan.0zizsfw1dz197l13bbldc1lvwvtz' name='listings_chicago.csv' table='[listings_chicago#csv]' type='table'>
+                  <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+                    <column datatype='integer' name='id' ordinal='0' />
+                    <column datatype='string' name='name' ordinal='1' />
+                    <column datatype='integer' name='host_id' ordinal='2' />
+                    <column datatype='string' name='host_name' ordinal='3' />
+                    <column datatype='string' name='neighbourhood_group' ordinal='4' />
+                    <column datatype='string' name='neighbourhood' ordinal='5' />
+                    <column datatype='real' name='latitude' ordinal='6' />
+                    <column datatype='real' name='longitude' ordinal='7' />
+                    <column datatype='string' name='room_type' ordinal='8' />
+                    <column datatype='integer' name='price' ordinal='9' />
+                    <column datatype='integer' name='minimum_nights' ordinal='10' />
+                    <column datatype='integer' name='number_of_reviews' ordinal='11' />
+                    <column datatype='date' name='last_review' ordinal='12' />
+                    <column datatype='real' name='reviews_per_month' ordinal='13' />
+                    <column datatype='integer' name='calculated_host_listings_count' ordinal='14' />
+                    <column datatype='integer' name='availability_365' ordinal='15' />
+                    <column datatype='integer' name='number_of_reviews_ltm' ordinal='16' />
+                    <column datatype='string' name='license' ordinal='17' />
+                  </columns>
+                </relation>
+                <relation connection='textscan.0zizsfw1dz197l13bbldc1lvwvtz' name='listings_Dallas.csv' table='[listings_Dallas#csv]' type='table'>
+                  <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+                    <column datatype='integer' name='id' ordinal='0' />
+                    <column datatype='string' name='name' ordinal='1' />
+                    <column datatype='integer' name='host_id' ordinal='2' />
+                    <column datatype='string' name='host_name' ordinal='3' />
+                    <column datatype='string' name='neighbourhood_group' ordinal='4' />
+                    <column datatype='string' name='neighbourhood' ordinal='5' />
+                    <column datatype='real' name='latitude' ordinal='6' />
+                    <column datatype='real' name='longitude' ordinal='7' />
+                    <column datatype='string' name='room_type' ordinal='8' />
+                    <column datatype='integer' name='price' ordinal='9' />
+                    <column datatype='integer' name='minimum_nights' ordinal='10' />
+                    <column datatype='integer' name='number_of_reviews' ordinal='11' />
+                    <column datatype='date' name='last_review' ordinal='12' />
+                    <column datatype='real' name='reviews_per_month' ordinal='13' />
+                    <column datatype='integer' name='calculated_host_listings_count' ordinal='14' />
+                    <column datatype='integer' name='availability_365' ordinal='15' />
+                    <column datatype='integer' name='number_of_reviews_ltm' ordinal='16' />
+                    <column datatype='string' name='license' ordinal='17' />
+                  </columns>
+                </relation>
+                <relation connection='textscan.0zizsfw1dz197l13bbldc1lvwvtz' name='listings_Denver.csv' table='[listings_Denver#csv]' type='table'>
+                  <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+                    <column datatype='integer' name='id' ordinal='0' />
+                    <column datatype='string' name='name' ordinal='1' />
+                    <column datatype='integer' name='host_id' ordinal='2' />
+                    <column datatype='string' name='host_name' ordinal='3' />
+                    <column datatype='string' name='neighbourhood_group' ordinal='4' />
+                    <column datatype='string' name='neighbourhood' ordinal='5' />
+                    <column datatype='real' name='latitude' ordinal='6' />
+                    <column datatype='real' name='longitude' ordinal='7' />
+                    <column datatype='string' name='room_type' ordinal='8' />
+                    <column datatype='integer' name='price' ordinal='9' />
+                    <column datatype='integer' name='minimum_nights' ordinal='10' />
+                    <column datatype='integer' name='number_of_reviews' ordinal='11' />
+                    <column datatype='date' name='last_review' ordinal='12' />
+                    <column datatype='real' name='reviews_per_month' ordinal='13' />
+                    <column datatype='integer' name='calculated_host_listings_count' ordinal='14' />
+                    <column datatype='integer' name='availability_365' ordinal='15' />
+                    <column datatype='integer' name='number_of_reviews_ltm' ordinal='16' />
+                    <column datatype='string' name='license' ordinal='17' />
+                  </columns>
+                </relation>
+                <relation connection='textscan.0zizsfw1dz197l13bbldc1lvwvtz' name='listings_Los_Angeles.csv' table='[listings_Los_Angeles#csv]' type='table'>
+                  <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+                    <column datatype='integer' name='id' ordinal='0' />
+                    <column datatype='string' name='name' ordinal='1' />
+                    <column datatype='integer' name='host_id' ordinal='2' />
+                    <column datatype='string' name='host_name' ordinal='3' />
+                    <column datatype='string' name='neighbourhood_group' ordinal='4' />
+                    <column datatype='string' name='neighbourhood' ordinal='5' />
+                    <column datatype='real' name='latitude' ordinal='6' />
+                    <column datatype='real' name='longitude' ordinal='7' />
+                    <column datatype='string' name='room_type' ordinal='8' />
+                    <column datatype='integer' name='price' ordinal='9' />
+                    <column datatype='integer' name='minimum_nights' ordinal='10' />
+                    <column datatype='integer' name='number_of_reviews' ordinal='11' />
+                    <column datatype='date' name='last_review' ordinal='12' />
+                    <column datatype='real' name='reviews_per_month' ordinal='13' />
+                    <column datatype='integer' name='calculated_host_listings_count' ordinal='14' />
+                    <column datatype='integer' name='availability_365' ordinal='15' />
+                    <column datatype='integer' name='number_of_reviews_ltm' ordinal='16' />
+                    <column datatype='string' name='license' ordinal='17' />
+                  </columns>
+                </relation>
+                <relation connection='textscan.0zizsfw1dz197l13bbldc1lvwvtz' name='listings_NewYork.csv' table='[listings_NewYork#csv]' type='table'>
+                  <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+                    <column datatype='integer' name='id' ordinal='0' />
+                    <column datatype='string' name='name' ordinal='1' />
+                    <column datatype='integer' name='host_id' ordinal='2' />
+                    <column datatype='string' name='host_name' ordinal='3' />
+                    <column datatype='string' name='neighbourhood_group' ordinal='4' />
+                    <column datatype='string' name='neighbourhood' ordinal='5' />
+                    <column datatype='real' name='latitude' ordinal='6' />
+                    <column datatype='real' name='longitude' ordinal='7' />
+                    <column datatype='string' name='room_type' ordinal='8' />
+                    <column datatype='integer' name='price' ordinal='9' />
+                    <column datatype='integer' name='minimum_nights' ordinal='10' />
+                    <column datatype='integer' name='number_of_reviews' ordinal='11' />
+                    <column datatype='date' name='last_review' ordinal='12' />
+                    <column datatype='real' name='reviews_per_month' ordinal='13' />
+                    <column datatype='integer' name='calculated_host_listings_count' ordinal='14' />
+                    <column datatype='integer' name='availability_365' ordinal='15' />
+                    <column datatype='integer' name='number_of_reviews_ltm' ordinal='16' />
+                    <column datatype='string' name='license' ordinal='17' />
+                  </columns>
+                </relation>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Average Price in USD'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='listings_Seattle' name='federated.034j1w30bp3iq51b7y7d01t20to6' />
+          </datasources>
+          <datasource-dependencies datasource='federated.034j1w30bp3iq51b7y7d01t20to6'>
+            <column caption='City' datatype='string' name='[Calculation_491173865620414465]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF CONTAINS([Table Name], &quot;chicago&quot;) THEN &quot;Chicago&quot;&#13;&#10;ELSEIF CONTAINS([Table Name], &quot;Seattle&quot;) THEN &quot;Seattle&quot;&#13;&#10;ELSEIF CONTAINS([Table Name], &quot;Dallas&quot;) THEN &quot;Dallas&quot;&#13;&#10;ELSEIF CONTAINS([Table Name], &quot;Los_Angeles&quot;) THEN &quot;Los Angeles&quot;&#13;&#10;ELSEIF CONTAINS([Table Name], &quot;NewYork&quot;) THEN &quot;New York&quot;&#13;&#10;ELSEIF CONTAINS([Table Name], &quot;Boston&quot;) THEN &quot;Boston&quot;&#13;&#10;ELSEIF CONTAINS([Table Name], &quot;Denver&quot;) THEN&quot;Denver&quot;&#13;&#10;END' />
+            </column>
+            <column datatype='string' name='[Table Name]' role='dimension' type='nominal' />
+            <column-instance column='[price]' derivation='Avg' name='[avg:price:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_491173865620414465]' derivation='None' name='[none:Calculation_491173865620414465:nk]' pivot='key' type='nominal' />
+            <column datatype='integer' name='[price]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.034j1w30bp3iq51b7y7d01t20to6].[none:Calculation_491173865620414465:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.034j1w30bp3iq51b7y7d01t20to6].[avg:price:qk]' shelf='rows' />
+          </shelf-sorts>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#0d8e90' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.034j1w30bp3iq51b7y7d01t20to6].[none:Calculation_491173865620414465:nk]</rows>
+        <cols>[federated.034j1w30bp3iq51b7y7d01t20to6].[avg:price:qk]</cols>
+      </table>
+      <simple-id uuid='{491E2207-A70F-40FF-9A87-0ABE87B2A889}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='30'>
+    <window class='worksheet' maximized='true' name='Average Price in USD'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.034j1w30bp3iq51b7y7d01t20to6].[none:Calculation_491173865620414465:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{116B8DF8-5030-447B-BB91-954373F37768}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Average Price in USD' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAAA7DAAAOwwHHb6hk
+      AAAflElEQVR4nO3dV3BcWWLe8f8NnXOjuwE0MggQzJkcpkkkJw83zGy0LK22ZMkuW2WX9OIq
+      u8peuSyHF5dftKWSZGmttbyr9cq7OzucnSEnMecEJhAAkTPQABqNzjf4AeSEneF6AAJEN/r8
+      nqbA6dsHF/e755x7T5BM0zQRhBIlL3cBBGE5iQAIJU0EQChpIgBCSRMBEEqaCIBQ0kQAhJIm
+      AiCUNBEAoaSJAAglTQRAKGkiAEJJEwEQSpoIgFDSRACEkiYCIJQ0EQChpIkACCVNBEAoaSIA
+      QkkTARBKmgiAUNJEAISSJgKwAJqmLXcRFkTXdXRdX+5izJtpmuTz+SU5tgjAAizVH2OpaZpW
+      lAEAyOVyS3JcEQChpKnLXYBilNV1Dvzwfy13MebNME0kQJKk5S7KvJiAaRjI8uLfr0UAFsA0
+      TW5NxJa7GMIiWHikTJ18Kk5iEZtmhpFnemyYiZkMi79ir046OctsMoux6McWitXCA5DPMNl+
+      gsvDi1eYfLKHoz/9v7x75g6zi36VztJ18zqtrUMsTXdKKEYF1QnODLeh1T3FassIfTPiPi0s
+      vcXvA+QmuXHuLHdH0tgC1azbvJH6iIPM0G3OX2lnIg3+ytVs27WBkPWTH9QYvhOjdvteXOPj
+      jA3EMf0BJGK0XhpCzY5wd2QayVPJ+i3baYo4MDMT3L58ibtDCVB9VNU3sWZrI+7ZEdpaW2kf
+      mkHx1LDjyZ1UOT9dTCM9yrUz5+mazOMub2LTtvVEXRrDbde51tZPQlcpX/0EezZVYkVYqRa5
+      BtAYOH+MG0k/9asaCMqT3L1xg6GZCW5d7oNAFc1N9ZT7rHymkZ/v5dZ0LWsrXThtXsyJfmZM
+      gDidF1vpz7qpq6/FZcTpuzdCllk6zpyjc8ZG7apVRP0wcreHWTNBX9cQKfw0rGqi2j/L9fP3
+      yHzqy9J0Xr9L1ldFU1MDXhL03OkiMdXN9b4Erop6mhtr8VlM0V9Y4Ra5Bhih9baN7d/eQbPH
+      gh7v4cz1PibGdLzKGGeujVDfspb1G5vxWT79ydy960zW7CGg2LB5nfSNjzA6beALAIEGdu7Y
+      it8jM9LVTv9YBn12mH4q2bptDTURB4mRdlJjAzAzStvVE5zrnMZiUzG1DJJzNxufjXz8Zel+
+      rp06wc1ZA6sqkc8YhFr2UrWqBSXWzc1+J40tG9ncFBJ3/xVukQOgkdOtOG0KEhKKxYIsSxiG
+      laaDX+d3xwe423WPi0d+TP/T3+HAqvuXl5mh7Xobd69c4N8ek8DUMYItvFqxhSY/YHXicViQ
+      JQNZUVFkE/QcusWOw25Bgo9rFC2PUr2Fr+zbwOpKx9y/oWAjy8yDYuYzpKL7+WfPbcHntIBp
+      IikWrFaViq98k3WDPfR23+XNH3bw9O+/zmqRghXrkQKg53NMjw0woABY8YYibFz1PsfP3GFf
+      o4fkUAfxpIWqiMxg9wB5i4NoXQsWWWc2n4P791cz1cGNmV380X98liqLAuYsHWcvMRgbYcaw
+      f/6Xe8oJTJzg8m2TdVVuEgN9xHIy+MOE8rfpbm/HqdbgRiMxlSW8tfLjz3prWG+e48ObQfY1
+      ByGTIouNUMBGLJZAsgWoWb0JI9VGPvtRMYUVaOEBkBUk2cLguV8wCECEnYcPsPWZV5k4+g7v
+      HEliDzeyY+82av1WxnuHOHv2LrGMQqRlD4ca3R8dykzkKd+9iXLlfpdEclNVX0kqLqHlHFRU
+      PHh7KWFzuPH7TRQ5wLqdDXxw/AJHrmk4fH6cSgRVCbHpiS2kTp3n+FtXMW0BmrY+RT0qnkAA
+      2XAiE2D7qweYfPskR26nsXjLWbdtD1UOC9nRNi7f7ieJjebdh9nleZTTKxQ6qXh3iUzQc+02
+      PbEkhgSalkVxrWbPvlU4//8ffiRTiQR1f/XXS/wtwuNQUO8B5seC0+3AIhvouoEjWM+GzXVL
+      fvELK0sR1wDLZzaV4t2BweUuxrxpmgaShKooy12Uectms9hstkU/rgjAAqTTaRwOx3IXY96y
+      2SySJGG1Flev3jRNUqkULpdr0Y9dxE0gQXh0IgBCSRNNoAVIplKcHh1b7mLMW17LIyGhqsU1
+      DcTEJJvJYrc/5J3QIyiuM1EgcrrO137+i+UuhrAIRBNIKGkFWgMk6Wu9xLnz7cSRsLgr2PrU
+      M2yscovECouqQK+nPPG8SkXjdg4efIY9a/3cOfIjTveLuVzC4irQGgCwughVVtHYGMLU6ygP
+      mfzqw6tM/9YT+DAxDR3DMEGSkRUZGTBNA8Oce25smiArCrI0t6IA8tx/YxroJsiSBJgY+txn
+      JFlGkSUkCXTdRJZB1w0kWUGRi2sVBeGLK9wAfERCUiy4Q9tYZfsp/ckdWNPdXPjwPc7dGSHv
+      qObJr77GU3UKvbdOcuJijOR0P6OzGhX7vs139ldw+61fIB34LbYHZbTxGxxtl9m5qRlL7Bq/
+      /MUxuqYVwqt3cuDQXlZHxnjzl2Nsr5/mzeN3cG1/jd/eX7vcJ0FYIkUQgAckQEPPxrnX3sWM
+      fQ0vvrYfJd3NybcvsuGf7sbQZTzVW3jpH32LoHaLHx6NI0m11G0o50LbKPk9IYZ7ZwmFqnDa
+      pzj+fhvRfV9hm0NjuKOXnrZ7lJd5YLaXS21+XvjuH9LgLaJTJMxb0fx1DS1GPF9GkznLQGyQ
+      rgGIT/cBEAivQgMUl49oXT0RlxXw41fjyLKCI9SAp6ON4ekmhvNWAu4gjkwb90YS+KzXGALA
+      RlWdC9kACLHjxf1Ui4t/xSuCv7CBlhyj9fQJ4hX7qHRZiPnKWRtew97t9bgVncTYJBL82rzf
+      ByQcrhDlld20Xx7EG3TiDbqRJS9lgQhbXvwya0JW9PQsSU3CLk+AJ0iZTbT7S0HhBmC6l7MX
+      z3D2rB1ZtROsWsUTO2uw2zXqq8oYOv8hP75loqh2AhXrefpg40MPpdiceLxOhq7cw1H5DEGH
+      DFIdezfe5OjP/46ziozVEWTV5u1sWv0Yf0dh2RXoUAiN5FSMiViCPCCrDgKRCH7n3PxfI59i
+      ejLG9GwWQ1JxekNEgna0TIo8TjxOFcgQi2kEAi5kGfLpBJPTSey+EN4Hx8nGGR6OkdZMFKsD
+      X7AMn8tkevLB5z6/FhATYlaOAg1AYRMBWDkKtwlUwCRJosHnW+5izNuDe12xrQ4NYJgGsrT4
+      721FDbAAYkLM4yUmxAjCEhEBEEqaCIBQ0kQneAFyus5rP/npchdj3kzTAKTi7AQbOrK8+KtZ
+      iAAsgGGanB4svmVRhM8qmgCYhkYqHidjAEioNicuhw1FkfhN97NccgbD7sUu62RzeZAs2KzF
+      ty6OsDSKJgD57CBv/8X/oEPxYlGs+Kua2bJzJxtqgtjUh3dl7rzxNySe+1fsd09w7Wobhnst
+      ezZGHvr/C6WlaAKApFLW8gIHvrIXb26WobbznLp4Hb9vDw0BJ2LOirAQxROAj0goVg81G/ey
+      fegdemIpar1WRjvOcbMnTs60EKxbw/qmary2h9UMOWKdN7l+b5i0ruCtaGTdumbKbDnG7t3m
+      1r1hUrpKWcMWtq2NiNXRV7DifQwqOQmF8kzP6OiGST6rYff48HstxPr6GY0l0B/6YYNMRsPm
+      8uH3OsjM9NPVPQ3xXq7fG0OzuPF7XchaXmyRtMIVYQ3wCaaMrIAkgazP0nmzi+lkhpm4G0t1
+      LTXRh43XsWBVZum7fYfh2RRpzULD1mo21Nkwp4boy3tobF7LqlqxRdJKV7wBMKbo6lYp36Ni
+      6Pe43KrwxCvfIGzP0nnyFrqqP/zunbjLqZsmm5//CodcBkM9HQxPaBiOVTz50mGG+roZGLjJ
+      W3/fxTPfPUyj5WEHEopdEQXARM+liE9NYeTidF85xXXnar4U8CIbQ+hWFz67Sj4xzFhsCqf2
+      Gw6l59Edbtw2K0ZmnImhUWas5TAbY2gyg628gfWRMNb0ZWbTgAjAilU0AZBQMOJX+clfXkW2
+      uIiu38PL+zcQclswtWY2VP49P/nby7iqGqkOVxHx2pEBVziKpAKyBY/Hh+G0gH8tu4Jv8MaP
+      ToKvisa1DdRLTmSLTKLrAkdbe0madtY8/TW2eZf7NxeWkhgOvQBiQszKUbxPgQRhEYgaYAFm
+      k0n+T1fXchdj3nRt7sGwohbZUBATcrkcVtviP5MTAVgAMSPs8RIzwgRhiYgACCVNNIEWIJlK
+      cSseX+5izJuWz89tk1pkWyRhQiaTwe4QWyQVhJyuc+jHP1nuYgiLQDSBhJL2mAKQpvfCMd44
+      00neuN/iSk1wr7Od3slH3/XFNDSm+65xpWuGj9pzqT7OXeommX/4mNDPmO7hbv8ECbERTcl4
+      TAHIMTaaYLL1Q25M3b8gszOMjAwylvhNg3a+oPu7vUzcucZQBkBj5OYtJkxpfquJJccYiCXI
+      LEKRhOLw+JpAljC7d/g4+2Ebi32DlSQZT6iacu8Mtzsm0Kc7uRjzsL4+jF0RU8WEh3uMnWAJ
+      +6pn2NPzS873NbD7E+80TC3N8I23+dsfn2RYd9Oy9yW++lwzo633sEYbaa4Pkrr+Bj84rfLi
+      d1+mWRnh3JVRorXN1FV5kJCQHUFqauqJd1zkxLAFX1Uj4YATzByx7uu896tjtA7nCTXv5NCh
+      fayp9DJx8qfcqt6NcuZndNg28sI2F3ouTXI2hSvbz4ljfaw5fJB6h+gqrVSP9ymQ5GDT4a9z
+      +4N/4FRw60dfnrx1hB+83Y7pDVEuwXT3TS7fruRAk8z7nTEigTgXuqO8/rqF9vOd2EJJrE47
+      gUrPRytCSJJCsH4dzfEMPXmV1esbcSuQy7TzwdEUB//Fv+EbAPFb/OT0HYK2zaDFmUr7eO23
+      /yXPAAxe4IMrv+LMr5zs/+1v8fw3WsRTghXusT8GVSwOomvWMnCqlXR5JbWAZLUR3XSYwwfW
+      EbRL5LNZNEPCZrXhOt9BrHOabM0+gpYM/vwF2tI1VHpCuD5zdcqoih2HAsr94S6S5MCuThOL
+      5wh4ZFLTibkdI1UZU/JQXuH91EVevfs1DrnHOXP1Eu2eJ2kJ23/jsitCcXv8NzhZwR+upyo4
+      Q2/v3MskV81GKhM3eP+9Y7z77nucOHud7rEEhhpilTfO+RsJqlZ5sTscuNQkw0Np7KHAF0qv
+      okRpbspy/cP3OHbsXT64NERZRRi38+HjYazRHTy3QeXOhYt0T+URbwpXLuV73/ve95b+ayRU
+      ix1vwItNVVAsFuzeIH5PiOqqEG5PkGjYRjaZQZdUXP4QldFyPHYbLrcFzVbJ6voQDlVBtrnw
+      ekJUR4PYPmdQo6wo2D0e3E4nKiBJKt5QGEtuloyh4q9ePbdihENBtthw+srwPJjxJatYHF78
+      LjvuUJQACQx3GJ9d+VQtkMnl+O9Xri79aROWnBgKsQBiQszKIfp4QkkTNcACpNJpNLn47h25
+      XB5JkrBYim8IWCqVwul0Lvpxi+9MFAAJ8Npsy12MectC0U6IUTQN1xKc8+K7jQnCIhIBEEqa
+      aAItQN4w+JMPjy93MeZN13WQJJQi67+YzE3msVgWf4UyEYAF0A2D71+9ttzFEBZBcd0KBGGR
+      FWgNEOf2h29z5FdXmZQlkK1Ub3yB11/fQ4VlfiNzTNNA1wwUiyrG9AifUaABMNHLWnjlOwdY
+      ty4M2izt7/2Qd69t4B/vnN9inVp+hFNvdrHltf0Elqi0QvEq0AB8kolhSjjKogQtAAb5VJzR
+      4RGmkhqKK0htbSVu1SSdmGBoYIykJmH1V9BQBj0dHQyND2O7fp2gN0Q0WoXLjDMyOMxkMofq
+      DFJZXYnfrjEVmyGbmGUmNUtGl/FXNVETtImaYwUr3AAkx2nv6md01IlpQjbjZd1TXozsNL13
+      rnK9Y5S8CUgSfYlnObjWweCdc5xrT6FaZNQKqLBb6GnvZnhikvxtk3B0Nd6gj1j7Za73jJHS
+      DWTZwWBsE7t3eum4fpGhoSSmzSCdjaP1qXz9lRaKbw044Ysq3ACYJoaukc/rSKoNvxdmEnky
+      0jjDkyka9r3KpqiT3MRVfvaLViZatpNNpzDsZTQ011NRVYEr6ObAVzxYP9kEmr7NG8Mmq554
+      kbXVHlLDbVy62EpPfD8oLipb1rJxcy0WrZt3fj5MGhGAlaxwA+COsGZ7FevWhTH0DBP9Zzl9
+      a4S6Zg1ZtRIIeFAVUMtrCae7mLV5qF33BNnOASZH7tDTMcSOQzup+fXlJNOzZNxByrxOVFnB
+      4QlT5mllNgWyw0ckFMBpVdAlN67iG+0gzFNRPAaVJZnUyAAxTcfhtqFnU/T1jpHVcky1XaTD
+      X0tEN9AMK7UbtrN793Yq9QTxXBbTNMlPjTKR0TEMHcMbwTfRS/fIFDk9z/RoJ11jPiKih1yS
+      CrYGkCbaePNXP+aHytxj0EjzHr78Wg0Wt8665gnef+ev+dP/PYu9agtf+toW3GaO7ntnefP9
+      VsayFqq3vcDrLg8WxUll+RA/+tN/h69lP6+8/Dx798Q4euQH/IcfzuCu2sLBV1+kzpFlUpbm
+      VlgBkCRkRRYd4BVODIdeADEhZuUoiiaQICyVgm0CFTJFlvm9TRuXuxjzpuvG3J7KRTYYDkDT
+      tCVZ1Vo0gRZA7BDzeIkdYgRhiYgACCVN9AEWKKsV3xLSOV1HkiTMIiu7CWR1HXUJyi0CsAAZ
+      TaPuz/9iuYshLALRBBJKWkHVAEY+yVBHG31TaSSbn6r6eqJlBv09OerqypBl8V5WWFwFFACN
+      oWvvcabHxOmyIJNGcQcI+rJcvTpDdXUAWf7kYqAZBltvM1u+mqaIG7EPhrAQhROA1D3O3THZ
+      8PxBmiMupFyKtC5jk4cf8gEFu9ePZFPEeB1hwQomAMZgG4m6vbRUuFEA7C48D/4xM8KFX17j
+      YlcMS6SZ/YcOsjkKE53DGNtClGMjNdnFqTff4cZYFlfjTl5+eiNS+wmOXGgnoVkoX72TZ5/d
+      TY1bxkgOcu7YUS50TmBYwjSv28oTz20mMN3LxRPHudgxCt5Gnjn8CpsrFn9vWqFwFEwApsdG
+      sAe8fM6K5zA5RnLXXr79pJuRrnYm7g2SilYwOzGJkc+j59O0nXyfVMuL/M7LXjJ5k4BTJRnd
+      wOFv7sEmZxgY6KL37hjV2+xcf/c0Y4GtfON3q9Enumm9MkZOi3Hz4k3i3g289jsvoUze4f1f
+      vof/O69QV1wvToV5KJgA+EJhsrEUBrbPPpqKbuLZrauwWAzM5Az5Uf1Tm1Zoejfdo2t49sur
+      CD74oZEmNtrKWx+0MjCTQZN9rN8XZmtCYrxsA/s2NBH2qySMKRzSFMTHmLAFqGtaS03YgRHw
+      savnr2gfhLqGx3IKhGVQMAFQqlZjO3ee3jVPU+u3g5YlZ0hYvsDdV5ZcuOx9xJN5/A4F3TCQ
+      Z25zqquML//zf025PU3Hjav0jDG3PVIuzmw2T5mpoOey5A1AtaBqOTLpDJphg1yCeNKKQ8wK
+      W9EKJgC4W9i96hbnjp+kN+REMUxclY00f4G7r6JW0thwiWsnTjPgVjFdYdZWOgi5x+m4cpFu
+      Jc9kLIZuKwdnOVHauX5pmgGfAy05xZRmA3c5Ne5+2u+cJz7kQs5NMyFv5MnI0v/qwvIpoBdh
+      Fmp3vcSuGgvpxAwpw4rH48auBFi7tuL+OwAZtz9EtCqMBRvRDS1UuZwoio36rU/R5MmTmEmQ
+      10H2NLB9dYBscoaUbqdm7RY2NoWxyE6q1zQRsRvMxBOkDBNZtWFRPDRs2EhT1EUuMUNarmDH
+      s9uIFM4tQlgCJTgceoaOM+e40jlESjdRnQFqW3axe0uUL9raETPCVo4SvL85qFy9kSciDeQM
+      E9XhIxwJf+GLX1hZSrAGeHSpVIqJIhtRCZDL5e5vkbT4y4wvJdM0SafTYoukQiFJErXe+a1R
+      WgiKekaYqooZYYKw2EQAhJIm+gALkEgm+bMbN5e7GPOm6zoSICufO+CkcJkm+XweyxI03UQf
+      YAE0w+A/nT233MUQFoFoAgklrQBrAJP0RDdnj73J6bYJDGeE9U+9yuFdddgWfdaLQTLWR+uZ
+      fhoOP0nFIh9dKHwFFwAjFaPz1nUSdV/mj79ehTozwMUrE0ybNZR//mDph5s4zU9uNPCNZ6P3
+      fzDOhQuDRCL11Nf7575Pz5OeTVN8T/WFxVB4AdB1DFPH5XZi6mAJ1LH/UD1gYup5ZqfHiU2n
+      MVQHwXAIr8MKmSkGR6fIaiaKzUUwVIZTn2Z4cJypcYXOzgw2mxObbZyRkWGyWdC0AMHqKj71
+      SsjIMzsdIzadRJMs+MJRytxic72VrOACoDo8hMIROm+c4OR4hFAkSuOqWoIOhXS8l9bzrXSP
+      xtGsTiLNO3hqUz3WiQ5On7xFKmciWXw0b99Fi32Qi1c7GBwa4HjCRzhcQzA4xp07fTgcPbS3
+      h9j2pcM0ffTNJunJAdputHK3b5K8ZCNSv5nde9cTLLizJCyWwvvTqk6iLTt5ytVJ290eBjpH
+      GYjlObS3jqn2c1zpVamtjaBkRrl17S5rGiuocQepqaomkc2RHBumv3+Ahif38PqrGlprI988
+      8HETyGIZpLz8QRPIIDH24IszDN65wZ2+OK5gBL+ZZvjqB7StWc9eMSR6xSq8AACS6iBcv5Fw
+      7ToyM4OcfPMaw/koxtQU1vJNBL0yeL3srongc1oYvnKNCT1M0GNHzcQYN3Xy+fl+a4r4LDid
+      QQJ+LypeAhUN1IopwStawQVASycY6esiH15Njd+KbCSZTBjUSwrOYATbiI+1uzYSVPJMjEyh
+      KgaxvinCz7/KLk+OvssxpuIfv9uLj42S1iuxYWAqQCLOpDtNVPfw6f1fXHjdCqYcZO2WHZS7
+      YDY2wKzx2E+B8BgVXAAkGbLTPbz75hGG4zlUXxU7DrxEjc2B2bSLms6f8+f/+Wdoipvoxic5
+      fChI/dZKfvD9/8K71hD1UTeO6P02S6CRhpm/47/+ydtUbzjIl76xmapAmiNv/QU//4cwL/yT
+      77LpozNgo37zegbfOcr//G9vk8JGtGUnh14WE4JXsoIbCmGaJpgGumFimiaSJCPL8kd7d5mG
+      jmGYmJKEJMkosgSY6LqOiYQsSXP7e0kykmRi6Dq6AZIsoygSGCa6YWCaoKgKEiamAZIiI5km
+      hmFgGAYm0txnPvHdD4gJMStH4dUAkgSSgvqQd9SSoiJ/5nWAhPq5H5CQf/3/lyXUT+2QIiE9
+      +HdJQlaU4hsrIyxYwQWgGCiSxGurVy93MebNMHSk+zVbcZmr4RVFbJFUEMQWSY/XUm6RJGqA
+      BcrlcstdhHkzjLlHWsVW9gf36KUotwjAAilF2E+Ye6ggFV3ZzfsPJ5ai3CIAC1RsFxHM1QDF
+      GoB8Pr8k5S623pAgLCoRAKGkiQAsQLE1IR6QJGnuPUsRWqpzLh6DCiVN1ABCSRMBEEqaCIBQ
+      0sR7gAUzMQ2DfC5HXjeRVQs2qzrX0VzuomFiGjq5bA7NMJFkBYvVhqpISKaBls+Ry+sgq1ht
+      VtQC3H/ZNDRy2RymasN2f9Sucf9nOjKqxYpVlR+5Uy8CsECmoTHdf4MPjx3n9lgOT+1WXnp+
+      H6vCrs8Mn37s9DSjHVc5fvwi9yaSWLxRtj71Ivs3ViDHezjz7jEudo6Du4Y9L32V3U3ewroQ
+      TJ3Znov87OdHSG7+A777dA1WM0Vf63GOnbjKeM5J3baDPL9vHSHnoy1aUFC/d/Ew0dMz9La1
+      49j+Lf54nYv+U29ztXOEqkADTssytyyzE3SPW9ly+Pf4WoWDePdNrt66xmDTk+Su3WY2+iR/
+      8KVm9IHzvHv6FIM1L1NXMBskmGjJUdq6U1RGyxl1q4BJanqAu51pdn37j1jjGOPk21foHI0S
+      qA+hPkICRB9ggXK5FImUlzXrKnHYvDRta0aLzaDn9eUuGtireWL/DlZHPciShGKz4/T6sWsx
+      RvQyWmqr8Ngs+Ko2s6lqiv6JAnoSrqcZ6e0j5SqnviaMXQJMg2xqlLR3E2srnNh8dWxvVhmP
+      59D0Ryu7CMAC6WTR1SC++3dO2e/HnZglaRTAJGJZRpYkJHQmOy9xqSuJv66ZsJQDpwObbW4r
+      WllR8HgdTMfTy13i+wxSk+MMxfKU19dT5vjE5ZnPogYDzA3klvAHXMwkshiGCMCykJCQTPPj
+      /YpNMFUVy7J3AO4zMvSdf49rcTeNzc001YewSnPTR/nELsuSJKGqhfFm28wlGRvqIedvpC7i
+      /rW2vQTmxzcX0zRRVZVH7XCJPsACydiRtRFiaQg6wBgfY9rlwFoQs60MRi6fotPRyLamevwP
+      Ooo2G8wMk0xn0HFgahoTYzP4qgthgoxJamaQi0ePcHnGzYdvyOipaRLconPwNX5/h4386Dhp
+      IjgwGBudwe1UeNQHWCIAC2R3uCgL5mk9f5fgZg+dZ9oJ1D6DxVIAd9NUJxfH3WzZHsYu5cmk
+      83OPQi3lrPJe41x7Jz5fC1rPCa6MN/JKpDBqLWewiS/94b/n5fs3+njrLziuP8ELW2tx5IYJ
+      5I5zoT3CJvcgpztUGg86sDzigskiAAsiIdu9NGzcwcjRt/jzMymiW5/j1TWV2B7lkcRiSSSZ
+      6T/D31w6+tGPfLUbOPTKa6zfsY/J93/Jj77/NlJ4G4e/tY9wIVRaSEiyis2hfrRjp+4PUaZ7
+      cdks2BwVbNjWzNG3/pLTmRDbnnuJlnI/j7pguBgMJ5S0gsi+ICwXEQChpIkACCVNBEAoaSIA
+      QkkTARBKmgiAUNJEAISSJgIglDQRAKGkiQAIJU0EQChpIgBCSRMBEEqaCIBQ0kQAhJImAiCU
+      NBEAoaSJAAglTQRAKGkiAEJJEwEQSpoIgFDSRACEkiYCIJQ0EQChpP0/S2kcj8tnmpkAAAAA
+      SUVORK5CYII=
+    </thumbnail>
+  </thumbnails>
+</workbook>
